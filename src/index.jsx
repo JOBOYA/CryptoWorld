@@ -1,26 +1,21 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router} from 'react-router-dom';
-import App from './App.jsx'
-import './index.jsx'
-import './styles.css'
-import { StyleProvider } from '@ant-design/cssinjs';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 
+import App from './App';
+import store from './app/store';
 
-
-
-
+import "@ant-design/cssinjs";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
-      <StyleProvider>
+      <Provider store={store}>
         <App />
-      </StyleProvider>
+      </Provider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );
-
-

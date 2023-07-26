@@ -4,7 +4,10 @@ import { Space } from 'antd';
 import { Layout } from 'antd'
 import { Typography } from 'antd'
 import {Navbar , Exchanges , Homepage , Cryptocurrencies , CryptoDetails , News} from './components'
-import './styles.css'
+import './styles.css';
+
+
+
 
 function App() {
  
